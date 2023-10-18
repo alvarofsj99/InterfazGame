@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class ventanaUI : MonoBehaviour, IDragHandler, IPointerDownHandler
 {
@@ -22,6 +23,11 @@ public class ventanaUI : MonoBehaviour, IDragHandler, IPointerDownHandler
         rectTransform = (RectTransform)transform;
 
         allWindows.Add(this);
+    }
+
+    public void Minimizar(Image img)
+    {
+        img.color = Color.green;
     }
 
     public void OnDrag(PointerEventData eventData)
