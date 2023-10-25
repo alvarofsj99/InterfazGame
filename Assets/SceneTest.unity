@@ -3002,7 +3002,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &258132363
 GameObject:
@@ -7575,6 +7575,147 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 697753756}
   m_CullTransparentMesh: 1
+--- !u!1 &698730019
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 698730020}
+  - component: {fileID: 698730021}
+  - component: {fileID: 698730022}
+  m_Layer: 0
+  m_Name: AudioController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &698730020
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698730019}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 206.76555, y: 110.48797, z: 1.2720335}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &698730021
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698730019}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &698730022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698730019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ea9455f84c97af4e84c689a598d14e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &699632976
 GameObject:
   m_ObjectHideFlags: 0
@@ -9120,18 +9261,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1986536052}
-        m_TargetAssemblyTypeName: gameController, Assembly-CSharp
-        m_MethodName: AumentarZona
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 45211035}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -9139,6 +9268,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1986536052}
+        m_TargetAssemblyTypeName: gameController, Assembly-CSharp
+        m_MethodName: AumentarZona
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 872685848}
+          m_ObjectArgumentAssemblyTypeName: MapButtons, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -11979,18 +12120,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1986536052}
-        m_TargetAssemblyTypeName: gameController, Assembly-CSharp
-        m_MethodName: AumentarZona
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 922140922}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -11998,6 +12127,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1986536052}
+        m_TargetAssemblyTypeName: gameController, Assembly-CSharp
+        m_MethodName: AumentarZona
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1103084984}
+          m_ObjectArgumentAssemblyTypeName: MapButtons, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -15269,7 +15410,7 @@ RectTransform:
   m_Children:
   - {fileID: 1558931621}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -17210,18 +17351,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1986536052}
-        m_TargetAssemblyTypeName: gameController, Assembly-CSharp
-        m_MethodName: AumentarZona
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 1664504761}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -17229,6 +17358,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1986536052}
+        m_TargetAssemblyTypeName: gameController, Assembly-CSharp
+        m_MethodName: AumentarZona
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1645363853}
+          m_ObjectArgumentAssemblyTypeName: MapButtons, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -17558,20 +17699,20 @@ MonoBehaviour:
     viendo en su piso.\r\nLa portera aseguraba que Guillem pasaba casi todos los
     dias por el piso de Javier y Jose, incluso cuando la victima no se encontraba
     en su domicilio; y la portera me ha ense\xF1ado varias quejas que pusieron los
-    vecinos debido a los ruidos \u201Cde caracter expl\xEDcito\u201D que se escuchaban
-    en el piso varios d\xEDas a la semana.\r\n\r\n\nSegun Guillem, estuvo con la
-    victima 4 meses de relacion, mantenia una relacion cordial con Javier, con el
-    que compartia su gusto por la psicologia, confronto varias veces a la sospechosa
-    Maria Angela Varela Lazaro cuando estos coinciden en alguna fiesta o evento e
-    incluso llego a amenazarla con poner una denuncia si no se alejaba de el o su
-    pareja.\r\n\r\n\nQuedo destrozado tras la muerte de la victima y sus allegados
-    aseguran que estuvo bastante tiempo encerrado en su habitacion, saliendo en varias
-    ocasiones para ir al piso de la victima y recoger sus pertenencias.\r\n\r\n\nEl
-    dia del fallecimiento de la victima, la portera recuerda ver a Jose y Javier
-    salir bien vestidos de su apartamento para las ferias y escuchar a altas horas
-    de la noche a dos personas subir al piso.\r\nGuillem asegura haber estado con
-    ellos, y otros amigos pueden corroborarlo, pero a la noche se les pierde la pista
-    a los tres hasta la vuelta al piso.\r"
+    vecinos debido a los ruidos \u201Cde caracter explicito\u201D que se escuchaban
+    en el piso varios dias a la semana.\r\n\r\n\nSegun Guillem, estuvo con la victima
+    4 meses de relacion, mantenia una relacion cordial con Javier, con el que compartia
+    su gusto por la psicologia, confronto varias veces a la sospechosa Maria Angela
+    Varela Lazaro cuando estos coinciden en alguna fiesta o evento e incluso llego
+    a amenazarla con poner una denuncia si no se alejaba de el o su pareja.\r\n\r\n\nQuedo
+    destrozado tras la muerte de la victima y sus allegados aseguran que estuvo bastante
+    tiempo encerrado en su habitacion, saliendo en varias ocasiones para ir al piso
+    de la victima y recoger sus pertenencias.\r\n\r\n\nEl dia del fallecimiento de
+    la victima, la portera recuerda ver a Jose y Javier salir bien vestidos de su
+    apartamento para las ferias y escuchar a altas horas de la noche a dos personas
+    subir al piso.\r\nGuillem asegura haber estado con ellos, y otros amigos pueden
+    corroborarlo, pero a la noche se les pierde la pista a los tres hasta la vuelta
+    al piso.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 57b317be76587cc419f3238003f8a95a, type: 2}
   m_sharedMaterial: {fileID: -576170149437118379, guid: 57b317be76587cc419f3238003f8a95a, type: 2}
@@ -19524,10 +19665,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1986536052}
-        m_TargetAssemblyTypeName: gameController, Assembly-CSharp
-        m_MethodName: AumentarZona
-        m_Mode: 1
+      - m_Target: {fileID: 1900852539}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -19536,13 +19677,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1900852539}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1986536052}
+        m_TargetAssemblyTypeName: gameController, Assembly-CSharp
+        m_MethodName: AumentarZona
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1864269127}
+          m_ObjectArgumentAssemblyTypeName: MapButtons, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -21183,7 +21324,7 @@ MonoBehaviour:
     de compartir un par de clases. Al parecer, el sospechoso habia prestado varias
     veces una suma considerable de dinero a Jose que, segun le decia, estaba invirtiendo
     en una industria privada que le volveria millonario, pero que estaba algo escaso
-    de dinero. Eventualmente, Javier se canso de prestar dinero y comenz\xF3 a reclamarlo,
+    de dinero. Eventualmente, Javier se canso de prestar dinero y comenzo a reclamarlo,
     ahi ocurrio la discusion y la separacion entre los amigos.\r\n\r\n\nNinguno de
     los amigos ni familiares de Jose sabe nada sobre la supuesta deuda, y Javier
     asegura que nunca llego a hablar con el del tema y que simplemente le dejaba

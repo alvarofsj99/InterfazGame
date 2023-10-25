@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\OwnButton.cs" />
     <Compile Include="Assets\Scripts\gameController.cs" />
     <Compile Include="Assets\Scripts\MapButtons.cs" />
+    <Compile Include="Assets\Scripts\audioController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

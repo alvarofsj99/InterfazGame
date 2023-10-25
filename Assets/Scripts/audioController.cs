@@ -2,11 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MapButtons : MonoBehaviour
+public class audioController : MonoBehaviour
 {
-
-    [SerializeField] internal bool opened = false;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -18,5 +15,4 @@ public class MapButtons : MonoBehaviour
     {
         
     }
-    
 }

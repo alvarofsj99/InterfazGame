@@ -41,10 +41,12 @@ public class gameController : MonoBehaviour
         }
     }
 
-    public void AumentarZona()
+    public void AumentarZona(MapButtons mapButton)
     {
-        zonaDescubierta++;
-
-
+        if(!mapButton.opened)
+        {
+            zonaDescubierta++;
+            mapButton.opened = true;
+        }
     }
 }
