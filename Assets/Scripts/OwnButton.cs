@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class OwnButton : MonoBehaviour
 {
-    [SerializeField] bool isActive;
+    [SerializeField] internal bool isActive;
     Button ownButton;
     [SerializeField]GameObject iconError;
     Image icon;
@@ -46,5 +46,10 @@ public class OwnButton : MonoBehaviour
         windowUI.SetActive(true);
         icon = GetComponent<Image>();
         icon.color = Color.white;
+    }
+
+    public void AbrirApp()
+    {
+        isActive = true;
     }
 }

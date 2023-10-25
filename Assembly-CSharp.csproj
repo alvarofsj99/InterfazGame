@@ -58,6 +58,8 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\ventanaUI.cs" />
     <Compile Include="Assets\Scripts\OwnButton.cs" />
+    <Compile Include="Assets\Scripts\gameController.cs" />
+    <Compile Include="Assets\Scripts\MapButtons.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
